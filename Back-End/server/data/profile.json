@@ -1,5 +1,11 @@
 [
   {
-    "image": "./image/images.png"
+    "image": "../image/facebook.png"
+  },
+  {
+    "image": "../image/instagram.png"
+  },
+  {
+    "image": "../image/github.png"
   }
 ]

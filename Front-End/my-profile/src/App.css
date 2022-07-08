@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+.fontTag {
+  font-family: "Mali", cursive;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.back-cover {
+  background-image: url(../public/image/12.webp);
+  width: 100vw;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.back-color {
+  background-color: rgba(127, 54, 103, 0.6);
+  width: 100vw;
+  height: 83.5vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.minHeight {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 83.5vh;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fontH1 {
+  font-size: 2em;
+  font-family: "Architects Daughter", cursive;
+  text-shadow: 3px 10px rgba(117, 17, 50, 0.5);
 }
