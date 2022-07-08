@@ -15,7 +15,7 @@ function Footer() {
         {image &&
           image.map((img, i) => {
             return (
-              <a key={i} href="https://www.facebook.com/">
+              <a key={i} href={`${img.link}`}>
                 <img
                   key={i}
                   src={`${img.image}`}

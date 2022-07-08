@@ -3,6 +3,7 @@ import App from "./App";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Project from "./components/Project";
 
 export default function Main() {
   return (
@@ -12,7 +13,7 @@ export default function Main() {
         <Route path="/" element={<App />}></Route>
         <Route path="/HOME" element={<App />}></Route>
         <Route path="/ABOUT" element={<About />}></Route>
-        <Route path="/ABOUT" element={<Header />}></Route>
+        <Route path="/PROJECT" element={<Project />}></Route>
       </Routes>
       <Footer />
     </div>

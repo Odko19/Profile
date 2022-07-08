@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const [category, setCategory] = useState([]);
-  const [select, setSelect] = useState(false);
+  const [select, setSelect] = useState();
 
   useEffect(() => {
     fetch("http://localhost:3001/profile/category")

@@ -1,11 +1,14 @@
 [
   {
-    "image": "../image/facebook.png"
+    "image": "../image/facebook.png",
+    "link": "https://www.facebook.com/"
   },
   {
-    "image": "../image/instagram.png"
+    "image": "../image/instagram.png",
+    "link": "https://www.instagram.com/"
   },
   {
-    "image": "../image/github.png"
+    "image": "../image/github.png",
+    "link": "https://github.com/Odko19"
   }
 ]
