@@ -10,9 +10,12 @@ const fileExperience = require("./models/experience.json");
 const PORT = process.env.PORT;
 
 /* SERVER  */
+app.set("view engine", "ejs");
+app.set("views", __dirname + "/views");
+app.set("view options", { layout: false });
 
 app.use(express.static("public"));
-app.get("/profile/:name", (req, res) => {
+app.get("/models/:name", (req, res) => {
   // console.log(req.params.name);
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Request-Method", "*");
@@ -33,6 +36,26 @@ app.get("/profile/:name", (req, res) => {
     res.send(fileMajor);
   }
   res.end();
+});
+app.get("/ejs", (req, res) => {
+  res.render("index", { name: "ODKO" });
+});
+app.get("/404", (req, res) => {
+  res.render("404", { message: "oopsie" });
+});
+app.get("/js", (req, res) => {
+  let data = {
+    name: "Odko",
+    hobbies: ["item-1", "item-2", "item-3"],
+  };
+  res.render("js", { data: data });
+});
+app.get("/example", (req, res) => {
+  let data = {
+    text: ["Cinnamon Rolls", "Yeast Donuts", "Pumpkin Pie"],
+    image: ["/image/image.svg", "/image/image.svg", "/image/image.svg"],
+  };
+  res.render("example", { data: data });
 });
 app.listen(PORT);
 console.log(`Running server localhost: ${PORT}`);
