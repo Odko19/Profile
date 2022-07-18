@@ -1,13 +1,17 @@
 const express = require("express");
 const app = express();
-const fileAbout = require("./data/about.json");
-const fileProfile = require("./data/profile.json");
-const filedesc = require("./data/description.json");
-const fileCategory = require("./data/category.json");
-const fileMajor = require("./data/major.json");
-const fileExperience = require("./data/experience.json");
+require("dotenv").config();
+const fileAbout = require("./models/about.json");
+const fileProfile = require("./models/profile.json");
+const filedesc = require("./models/description.json");
+const fileCategory = require("./models/category.json");
+const fileMajor = require("./models/major.json");
+const fileExperience = require("./models/experience.json");
+const PORT = process.env.PORT;
 
 /* SERVER  */
+
+app.use(express.static("public"));
 app.get("/profile/:name", (req, res) => {
   // console.log(req.params.name);
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -30,5 +34,5 @@ app.get("/profile/:name", (req, res) => {
   }
   res.end();
 });
-app.listen(3001);
-console.log("Running server localhost: 3001");
+app.listen(PORT);
+console.log(`Running server localhost: ${PORT}`);
