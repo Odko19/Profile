@@ -5,7 +5,7 @@ function App() {
   const [desc, setDesc] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/profile/description")
+    fetch("http://localhost:3000/models/description")
       .then((res) => res.json())
       .then((res) => setDesc(res));
   }, []);
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App back-cover">
       <div className="back-color ">
-        <div className=" p-3 container minHeight text-white">
+        <div className="p-3 container minHeight text-white">
           <h1>
             <span className="fontTag">&#60;h1&#62;</span>
             <br />

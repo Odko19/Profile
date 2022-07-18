@@ -7,13 +7,13 @@ function About() {
   const [experience, setExperience] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/profile/about")
+    fetch("http://localhost:3000/models/about")
       .then((res) => res.json())
       .then((res) => setAbout(res));
-    fetch("http://localhost:3001/profile/major")
+    fetch("http://localhost:3000/models/major")
       .then((res) => res.json())
       .then((res) => setMajor(res));
-    fetch("http://localhost:3001/profile/experience")
+    fetch("http://localhost:3000/models/experience")
       .then((res) => res.json())
       .then((res) => setExperience(res));
   }, []);
@@ -24,7 +24,11 @@ function About() {
         <div className=" p-3 container minHeight text-white">
           <div className="flex">
             <div>
-              <img src="../image/image.svg" alt="" className="image-width" />
+              <img
+                src="http://localhost:3000/image/image.svg"
+                alt=""
+                className="image-width"
+              />
             </div>
             <div>
               <p>

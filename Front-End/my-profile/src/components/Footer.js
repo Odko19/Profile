@@ -5,7 +5,7 @@ function Footer() {
   const [image, setImage] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/profile/profile")
+    fetch("http://localhost:3000/models/profile")
       .then((res) => res.json())
       .then((res) => setImage(res));
   }, []);
