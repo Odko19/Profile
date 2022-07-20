@@ -25,6 +25,7 @@ header {
 
 .line {
   border: 0.5px solid gray;
+  background-color: gray;
   animation: pulse 3s ease infinite alternate,
     nudge 5s linear infinite alternate;
 }

@@ -7,7 +7,7 @@ function Header() {
   const [select, setSelect] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:3000/models/category")
+    fetch("https://profile-back-end-v1.herokuapp.com/models/category")
       .then((res) => res.json())
       .then((res) => setCategory(res));
   }, []);

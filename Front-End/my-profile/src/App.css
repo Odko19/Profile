@@ -4,7 +4,7 @@
   font-family: "Mali", cursive;
 }
 .back-cover {
-  background-image: url(http://localhost:3000/image/12.webp);
+  background-image: url(https://profile-back-end-v1.herokuapp.com/image/12.webp);
   width: 100vw;
 }
 .back-color {

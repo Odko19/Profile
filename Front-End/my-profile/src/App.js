@@ -5,7 +5,7 @@ function App() {
   const [desc, setDesc] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/models/description")
+    fetch("https://profile-back-end-v1.herokuapp.com/models/description")
       .then((res) => res.json())
       .then((res) => setDesc(res));
   }, []);

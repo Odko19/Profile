@@ -7,13 +7,13 @@ function About() {
   const [experience, setExperience] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/models/about")
+    fetch("https://profile-back-end-v1.herokuapp.com/models/about")
       .then((res) => res.json())
       .then((res) => setAbout(res));
-    fetch("http://localhost:3000/models/major")
+    fetch("https://profile-back-end-v1.herokuapp.com/models/major")
       .then((res) => res.json())
       .then((res) => setMajor(res));
-    fetch("http://localhost:3000/models/experience")
+    fetch("https://profile-back-end-v1.herokuapp.com/models/experience")
       .then((res) => res.json())
       .then((res) => setExperience(res));
   }, []);
@@ -25,7 +25,7 @@ function About() {
           <div className="flex">
             <div>
               <img
-                src="http://localhost:3000/image/image.svg"
+                src="https://profile-back-end-v1.herokuapp.com/image/image.svg"
                 alt=""
                 className="image-width"
               />
