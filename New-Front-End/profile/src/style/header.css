@@ -1,16 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+/* .font-title {
+  font-size: 2em;
+  font-family: "Architects Daughter", cursive;
+  text-shadow: 1px 3px gray;
+} */
+
 nav {
   display: flex;
 }
-ul {
-  display: flex;
+
+li {
+  margin: 10px;
+  text-transform: uppercase;
   list-style-type: none;
 }
-li {
-  margin-left: 20px;
-  text-transform: uppercase;
-}
 header {
-  background-color: black;
+  background-color: #131820;
   color: #e9ecef;
   position: fixed;
   width: 100vw;
@@ -20,7 +26,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 10px;
 }
 
 .line {
@@ -30,9 +36,9 @@ header {
     nudge 5s linear infinite alternate;
 }
 .line {
-  border: 0.5px solid gray;
+  border: 0.5px solid #37a684;
   margin: 0 auto;
-  border: 2px solid gray;
+  border: 2px solid #37a684;
   animation-name: stretch;
   animation-duration: 10s;
   animation-timing-function: ease-out;
@@ -46,16 +52,16 @@ header {
 @keyframes stretch {
   0% {
     transform: scale(0.3);
-    border: 1.5px solid gray;
+    border: 1.5px solid #37a684;
     border-radius: 100%;
   }
   50% {
-    border: 1.2px solid gray;
+    border: 1.2px solid #37a684;
     border-radius: 100%;
   }
   100% {
     transform: scale(1.2);
-    border: 1.2px solid gray;
+    border: 1.2px solid #37a684;
     border-radius: 100%;
   }
 }

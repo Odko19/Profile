@@ -1,18 +1,30 @@
 .back {
-  background-color: black;
+  background-color: #131820;
+  background-image: url(../public/images/2.png);
+  background-repeat: no-repeat;
+  z-index: 99;
 }
-/* .content {
-  height: 100vh;
-} */
+
 .content-header {
   color: white;
   text-transform: capitalize;
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
-.image {
-  width: 30%;
+.box {
+  height: 200px;
+  width: 500px !important;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.top {
+  margin-top: 300px;
+  color: white;
+}
+.flex {
+  display: flex;
 }

@@ -1,0 +1,75 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.card {
+  max-width: 20.333%;
+  padding: 0.75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  flex-basis: 33.333%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.height {
+  height: 100vh;
+}
+.sss {
+  color: white;
+  text-align: center;
+}
+
+.box1 {
+  width: 300px;
+  height: 200px;
+  background: rgb(145, 158, 166);
+  background: linear-gradient(
+    90deg,
+    rgba(145, 158, 166, 1) 0%,
+    rgba(45, 65, 87, 0.22034751400560226) 100%
+  );
+  border-radius: 20px;
+  animation: nudge 30s linear infinite alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box2 {
+  width: 300px;
+  height: 200px;
+  background: rgb(145, 158, 166);
+  background: linear-gradient(
+    274deg,
+    rgba(145, 158, 166, 1) 0%,
+    rgba(45, 65, 87, 0.22034751400560226) 100%
+  );
+  border-radius: 20px;
+  animation: nudge1 30s linear infinite alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-200px, 0);
+  }
+}
+
+@keyframes nudge1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(300px, 0);
+  }
+}
