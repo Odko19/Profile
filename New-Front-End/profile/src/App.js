@@ -1,8 +1,8 @@
 import "./App.css";
 import Header from "./components/Header";
 import Skill from "./components/Skill";
+import About from "./components/About";
 import { useEffect, useState } from "react";
-import HorizontalScroll from "react-scroll-horizontal";
 
 function App() {
   const [desc, setDesc] = useState([]);
@@ -20,7 +20,7 @@ function App() {
         <div className="content">
           <div className="content-header home" id="HOME">
             {desc.map((text) => {
-              return <h1 className="font-title top">{text.data}</h1>;
+              return <h1 className="font-title">{text.data}</h1>;
             })}
           </div>
         </div>
@@ -29,9 +29,9 @@ function App() {
             <Skill />
           </div>
         </div>
-        <div className="content">
-          <div className="content-header" id="PROJECT">
-            <h1>contact</h1>
+        <div className="content ">
+          <div id="PROJECT">
+            <About />
           </div>
         </div>
         <div className="content">

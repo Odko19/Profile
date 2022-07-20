@@ -10,7 +10,7 @@ function Header() {
       .then((res) => res.json())
       .then((res) => setCategory(res));
   }, []);
-  console.log(category);
+
   return (
     <header>
       <div className="container flex-header">

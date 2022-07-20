@@ -20,6 +20,7 @@ header {
   color: #e9ecef;
   position: fixed;
   width: 100vw;
+  z-index: 999;
 }
 
 .flex-header {
