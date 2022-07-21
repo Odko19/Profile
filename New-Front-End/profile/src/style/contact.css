@@ -1,0 +1,13 @@
+.c1 {
+  color: white;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+.image {
+  padding: 20px;
+}

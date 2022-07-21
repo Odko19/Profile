@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Skill from "./components/Skill";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -19,8 +20,12 @@ function App() {
       <main>
         <div className="content">
           <div className="content-header home" id="HOME">
-            {desc.map((text) => {
-              return <h1 className="fontH1">{text.data}</h1>;
+            {desc.map((text, i) => {
+              return (
+                <h1 className="fontH1" key={i}>
+                  {text.data}
+                </h1>
+              );
             })}
           </div>
         </div>
@@ -35,8 +40,8 @@ function App() {
           </div>
         </div>
         <div className="content">
-          <div className="content-header" id="about">
-            <h1>about</h1>
+          <div id="about">
+            <Contact />
           </div>
         </div>
       </main>

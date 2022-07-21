@@ -32,33 +32,39 @@ function About() {
           </div>
           <div className="info">
             <h4>Танилцуулга</h4>
-            <ul>
+            <table>
               {about &&
                 about.map((name, i) => {
                   return (
-                    <li>
-                      <td>{name.data}</td>
-                    </li>
+                    <tbody key={i}>
+                      <tr>
+                        <td>{name.data}</td>
+                      </tr>
+                    </tbody>
                   );
                 })}
-            </ul>
+            </table>
             <h4>Танилцуулга</h4>
-            <ul>
+            <table>
               {major &&
                 major.map((name, i) => {
                   return (
-                    <li>
-                      <td>{name.data}</td>
-                    </li>
+                    <tbody key={i}>
+                      <tr>
+                        <td>{name.data}</td>
+                      </tr>
+                    </tbody>
                   );
                 })}
-            </ul>
+            </table>
             <h4>Танилцуулга</h4>
-            <ul>
-              <li>
-                <td>{experience.data}</td>
-              </li>
-            </ul>
+            <table>
+              <tbody>
+                <tr>
+                  <td>{experience.data}</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

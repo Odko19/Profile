@@ -1,7 +1,6 @@
 .about {
   box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
+  height: 75vh;
   z-index: 99;
 }
 
@@ -14,7 +13,7 @@
   height: 100%;
 }
 .text h4,
-li {
+td {
   color: white;
 }
 .image-width {
@@ -22,8 +21,9 @@ li {
 }
 .back1 {
   background: #131820;
-  height: 60vh;
+  height: 65vh;
   width: 85vw;
+  margin-top: 100px;
   margin-left: 7vw;
   overflow: hidden;
   position: relative;
@@ -61,12 +61,19 @@ li {
   font-size: 10em;
 }
 @media (max-width: 768px) {
+  .about {
+    box-sizing: border-box;
+    height: 100vh;
+    z-index: 99;
+  }
   .back {
     background-image: none;
   }
-
+  .info {
+    padding: 10%;
+  }
   .back1 {
-    margin-top: 50px;
+    margin-top: 100px;
     background: #131820;
     height: 100vh;
     width: 80vw;
@@ -87,6 +94,11 @@ li {
   }
 }
 @media (max-width: 1024px) {
+  .about {
+    box-sizing: border-box;
+    height: 100vh;
+    z-index: 99;
+  }
   .image-width {
     width: 60%;
     margin-left: 20%;
@@ -112,7 +124,7 @@ li {
     z-index: 98;
   }
   .info {
-    padding: 10%;
+    margin: 0px 10px 10px 0;
   }
   .text h4,
   li {
