@@ -5,6 +5,9 @@
   font-family: "Architects Daughter", cursive;
   text-shadow: 1px 3px gray;
 } */
+.active {
+  font-weight: 700;
+}
 
 nav {
   display: flex;

@@ -10,6 +10,13 @@ function Header() {
       .then((res) => res.json())
       .then((res) => setCategory(res));
   }, []);
+  const ballStyle = {
+    border: "2px solid grey",
+  };
+
+  const ballStyle1 = {
+    border: "2px solid red",
+  };
 
   return (
     <header>
@@ -17,13 +24,7 @@ function Header() {
         {category.map((menu, i) => {
           return (
             <li key={i}>
-              <Link
-                activeClass="active"
-                to={`${menu.category}`}
-                smooth={true}
-                offset={200}
-                duration={500}
-              >
+              <Link activeClass="active" to={`${menu.category}`} smooth spy>
                 {menu.category}
               </Link>
             </li>
