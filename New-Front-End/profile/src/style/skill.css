@@ -3,8 +3,8 @@
   flex-direction: row;
   flex-wrap: nowrap;
 
-  /* overflow-x: auto;
-  overflow-y: hidden; */
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .card {
   max-width: 20.333%;
@@ -16,7 +16,7 @@
   flex-shrink: 0;
 }
 .height {
-  height: 100vh;
+  height: 60vh;
 }
 .sss {
   color: white;

@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+.fontH1 {
+  font-size: 4em;
+  font-family: "Architects Daughter", cursive;
+  text-shadow: 3px 10px black;
+}
+
 .back {
   background-color: #131820;
   background-image: url(../public/images/2.png);
@@ -34,12 +42,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5vw;
+
   text-align: center;
 }
 @media (max-width: 768px) {
   .back {
     background-image: none;
+  }
+  .fontH1 {
+    font-size: 3em;
+    font-family: "Architects Daughter", cursive;
+    text-shadow: 3px 10px black;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    text-align: center;
   }
 }
 @media (max-width: 1024px) {

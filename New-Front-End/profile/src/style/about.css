@@ -8,18 +8,21 @@
 .text {
   z-index: 999;
   position: relative;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
 }
-.text p {
+.text h4,
+li {
   color: white;
 }
-table td,
-tr {
-  color: white;
+.image-width {
+  width: 60%;
 }
 .back1 {
   background: #131820;
-  height: 100vh;
+  height: 60vh;
   width: 85vw;
   margin-left: 7vw;
   overflow: hidden;
@@ -34,13 +37,13 @@ tr {
   width: 100%;
   height: 100%;
   background: linear-gradient(#37a684, white);
-  animation: animate 10s linear infinite;
+  animation: animate 20s linear infinite;
   z-index: 1;
 }
 .back1::after {
   content: "";
   position: absolute;
-  inset: 5px;
+  inset: 6px;
   background-color: #131820;
   border-radius: 10px;
   z-index: 98;
@@ -73,8 +76,30 @@ tr {
     border-radius: 10px;
     z-index: 98;
   }
+  .text {
+    z-index: 999;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
 }
 @media (max-width: 1024px) {
+  .image-width {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .text {
+    z-index: 999;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
   .back1 {
     margin-top: 100px;
     background: #131820;
@@ -85,5 +110,13 @@ tr {
     position: relative;
     border-radius: 10px;
     z-index: 98;
+  }
+  .info {
+    padding: 10%;
+  }
+  .text h4,
+  li {
+    color: white;
+    font-size: 0.8em;
   }
 }

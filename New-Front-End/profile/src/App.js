@@ -20,7 +20,7 @@ function App() {
         <div className="content">
           <div className="content-header home" id="HOME">
             {desc.map((text) => {
-              return <h1 className="font-title">{text.data}</h1>;
+              return <h1 className="fontH1">{text.data}</h1>;
             })}
           </div>
         </div>

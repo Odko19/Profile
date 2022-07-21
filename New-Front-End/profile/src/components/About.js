@@ -6,9 +6,7 @@ function About() {
   const [about, setAbout] = useState([]);
   const [major, setMajor] = useState([]);
   const [experience, setExperience] = useState([]);
-  console.log(about);
-  console.log(major);
-  console.log(experience);
+
   useEffect(() => {
     fetch("https://profile-back-end-v1.herokuapp.com/models/about")
       .then((res) => res.json())
@@ -25,17 +23,43 @@ function About() {
     <div className="about">
       <div className="back1 ">
         <div className="text">
-          <p>Танилцуулга</p>
-          <table>
-            {about &&
-              about.map((name, i) => {
-                return (
-                  <tr>
-                    <td>{name.data}</td>
-                  </tr>
-                );
-              })}
-          </table>
+          <div>
+            <img
+              src="https://profile-back-end-v1.herokuapp.com/image/image.svg"
+              alt=""
+              className="image-width"
+            />
+          </div>
+          <div className="info">
+            <h4>Танилцуулга</h4>
+            <ul>
+              {about &&
+                about.map((name, i) => {
+                  return (
+                    <li>
+                      <td>{name.data}</td>
+                    </li>
+                  );
+                })}
+            </ul>
+            <h4>Танилцуулга</h4>
+            <ul>
+              {major &&
+                major.map((name, i) => {
+                  return (
+                    <li>
+                      <td>{name.data}</td>
+                    </li>
+                  );
+                })}
+            </ul>
+            <h4>Танилцуулга</h4>
+            <ul>
+              <li>
+                <td>{experience.data}</td>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
