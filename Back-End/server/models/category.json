@@ -3,9 +3,12 @@
     "category": "HOME"
   },
   {
+    "category": "SKILL"
+  },
+  {
     "category": "ABOUT"
   },
   {
-    "category": "PROJECT"
+    "category": "CONTACT"
   }
 ]

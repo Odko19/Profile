@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "fornt-end": [
+        "html",
+        "css",
+        "bootstrap",
+        "tailwind",
+        "javascript",
+        "react"
+      ],
+      "back-end": ["node.js"],
+      "databases": ["mongoDb", "mysql"]
+    }
+  ]
+}
