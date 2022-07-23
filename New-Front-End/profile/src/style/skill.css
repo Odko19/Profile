@@ -16,7 +16,7 @@
   flex-shrink: 0;
 }
 .height {
-  height: 60vh;
+  height: 70vh;
 }
 .sss {
   color: white;
@@ -88,7 +88,7 @@
     flex-wrap: none;
   }
   .box1 {
-    height: 120px;
+    height: 90px;
     width: 250px;
     background: rgb(145, 158, 166);
     background: linear-gradient(
@@ -104,7 +104,7 @@
   }
 
   .box2 {
-    height: 120px;
+    height: 90px;
     width: 250px;
     background: rgb(145, 158, 166);
     background: linear-gradient(
@@ -125,7 +125,7 @@
       transform: translate(0, 0);
     }
     100% {
-      transform: translate(0, 100px);
+      transform: translate(0, 70px);
     }
   }
 
@@ -135,14 +135,20 @@
       transform: translate(0, 0);
     }
     100% {
-      transform: translate(0, -100px);
+      transform: translate(0, -70px);
     }
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 650px) {
+  .height {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
   .box1 {
-    height: 120px;
+    height: 75px;
     width: 130px;
     background: rgb(145, 158, 166);
     background: linear-gradient(
@@ -158,7 +164,7 @@
   }
 
   .box2 {
-    height: 120px;
+    height: 75px;
     width: 130px;
     background: rgb(145, 158, 166);
     background: linear-gradient(
@@ -171,5 +177,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  @keyframes nudge {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, 60px);
+    }
+  }
+
+  @keyframes nudge1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, -60px);
+    }
   }
 }

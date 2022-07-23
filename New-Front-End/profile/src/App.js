@@ -15,24 +15,20 @@ function App() {
       .then((res) => setDesc(res));
   }, []);
 
-  return (
+  return desc ? (
     <div className="back">
       <div>
         <Header />
         <main>
           <div className="content">
             <div className="content-header home" id="HOME">
-              {desc ? (
-                desc.map((text, i) => {
-                  return (
-                    <h1 className="fontH1" key={i}>
-                      {text.data}
-                    </h1>
-                  );
-                })
-              ) : (
-                <Loading />
-              )}
+              {desc.map((text, i) => {
+                return (
+                  <h1 className="fontH1" key={i}>
+                    {text.data}
+                  </h1>
+                );
+              })}
             </div>
           </div>
 
@@ -54,6 +50,8 @@ function App() {
         </main>
       </div>
     </div>
+  ) : (
+    <Loading />
   );
 }
 

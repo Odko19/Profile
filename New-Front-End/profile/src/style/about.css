@@ -23,7 +23,6 @@ td {
   background: #131820;
   height: 65vh;
   width: 85vw;
-  margin-top: 100px;
   margin-left: 7vw;
   overflow: hidden;
   position: relative;
@@ -73,7 +72,6 @@ td {
     padding: 10%;
   }
   .back1 {
-    margin-top: 100px;
     background: #131820;
     height: 100vh;
     width: 80vw;
@@ -113,7 +111,7 @@ td {
     width: 100%;
   }
   .back1 {
-    margin-top: 100px;
+    margin-top: 50px;
     background: #131820;
     height: 100vh;
     width: 80vw;
