@@ -2,7 +2,7 @@ import "../style/skill.css";
 
 function Skill() {
   return (
-    <div className="height">
+    <div className="height container">
       <div className="row">
         <div className="card">
           <div className="box1">sjdhfs</div>

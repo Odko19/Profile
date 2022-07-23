@@ -10,13 +10,6 @@ function Header() {
       .then((res) => res.json())
       .then((res) => setCategory(res));
   }, []);
-  const ballStyle = {
-    border: "2px solid grey",
-  };
-
-  const ballStyle1 = {
-    border: "2px solid red",
-  };
 
   return (
     <header>

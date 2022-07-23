@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-
-  overflow-x: auto;
-  overflow-y: hidden;
+  justify-content: center;
+  /* overflow-x: auto;
+  overflow-y: hidden; */
 }
 .card {
-  max-width: 20.333%;
+  max-width: 12.333%;
   padding: 0.75rem;
   margin-bottom: 2rem;
   border: 0;
@@ -24,7 +24,7 @@
 }
 
 .box1 {
-  width: 300px;
+  width: 200px;
   height: 200px;
   background: rgb(145, 158, 166);
   background: linear-gradient(
@@ -40,7 +40,7 @@
 }
 
 .box2 {
-  width: 300px;
+  width: 200px;
   height: 200px;
   background: rgb(145, 158, 166);
   background: linear-gradient(
@@ -89,6 +89,7 @@
   }
   .box1 {
     height: 120px;
+    width: 250px;
     background: rgb(145, 158, 166);
     background: linear-gradient(
       90deg,
@@ -104,6 +105,7 @@
 
   .box2 {
     height: 120px;
+    width: 250px;
     background: rgb(145, 158, 166);
     background: linear-gradient(
       274deg,
@@ -138,31 +140,10 @@
   }
 }
 
-@media (max-width: 768px) {
-  .card {
-    max-width: 20.333%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 0;
-    flex-basis: 33.333%;
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
-  .height {
-    height: 65vh;
-    display: block;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-  .row {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: none;
-  }
+@media (max-width: 767px) {
   .box1 {
-    height: 100px;
-    width: 90vw;
-    margin-left: 3vw;
+    height: 120px;
+    width: 130px;
     background: rgb(145, 158, 166);
     background: linear-gradient(
       90deg,
@@ -177,9 +158,8 @@
   }
 
   .box2 {
-    height: 100px;
-    width: 90vw;
-    margin-left: 3vw;
+    height: 120px;
+    width: 130px;
     background: rgb(145, 158, 166);
     background: linear-gradient(
       274deg,
@@ -191,25 +171,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  @keyframes nudge {
-    0%,
-    100% {
-      transform: none;
-    }
-    100% {
-      transform: none;
-    }
-  }
-
-  @keyframes nudge1 {
-    0%,
-    100% {
-      transform: none;
-    }
-    100% {
-      transform: none;
-    }
   }
 }
