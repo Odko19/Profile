@@ -8,13 +8,13 @@ function About() {
   const [experience, setExperience] = useState([]);
 
   useEffect(() => {
-    fetch("https://profile-back-end-v1.herokuapp.com/models/about")
+    fetch("https://profile-create-back-end-v2.herokuapp.com/profile/about")
       .then((res) => res.json())
       .then((res) => setAbout(res));
-    fetch("https://profile-back-end-v1.herokuapp.com/models/major")
+    fetch("https://profile-create-back-end-v2.herokuapp.com/profile/major")
       .then((res) => res.json())
       .then((res) => setMajor(res));
-    fetch("https://profile-back-end-v1.herokuapp.com/models/experience")
+    fetch("https://profile-create-back-end-v2.herokuapp.com/profile/experience")
       .then((res) => res.json())
       .then((res) => setExperience(res));
   }, []);
@@ -25,7 +25,7 @@ function About() {
         <div className="text">
           <div>
             <img
-              src="https://profile-back-end-v1.herokuapp.com/image/image.svg"
+              src="https://profile-create-back-end-v2.herokuapp.com/image/image.svg"
               alt=""
               className="image-width"
             />

@@ -33,17 +33,17 @@ function App() {
           </div>
 
           <div className="content">
-            <div id="ABOUT">
+            <div id="SKILL">
               <Skill />
             </div>
           </div>
           <div className="content ">
-            <div id="PROJECT">
+            <div id="ABOUT">
               <About />
             </div>
           </div>
           <div className="content">
-            <div id="about">
+            <div id="CONTACT">
               <Contact />
             </div>
           </div>

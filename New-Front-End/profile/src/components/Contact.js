@@ -3,9 +3,9 @@ import "../style/contact.css";
 
 function Contact() {
   const [image, setImage] = useState([]);
-  console.log(image);
+
   useEffect(() => {
-    fetch("https://profile-back-end-v1.herokuapp.com/models/profile")
+    fetch("https://profile-create-back-end-v2.herokuapp.com/profile/profile")
       .then((res) => res.json())
       .then((res) => setImage(res));
   }, []);
