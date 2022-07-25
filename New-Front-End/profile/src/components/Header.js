@@ -6,7 +6,7 @@ function Header() {
   const [category, setCategory] = useState([]);
 
   useEffect(() => {
-    fetch("https://profile-back-end-v1.herokuapp.com/models/category")
+    fetch("https://profile-create-back-end-v2.herokuapp.com/profile/category")
       .then((res) => res.json())
       .then((res) => setCategory(res));
   }, []);

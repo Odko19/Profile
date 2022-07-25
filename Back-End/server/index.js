@@ -16,7 +16,7 @@ const PORT = process.env.PORT;
 // // app.set("view options", { layout: false });
 
 app.use(express.static("public"));
-app.get("/models/:name", (req, res) => {
+app.get("/profile/:name", (req, res) => {
   // console.log(req.params.name);
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Request-Method", "*");
