@@ -1,11 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
-.fontH1 {
+h1 {
   font-size: 4em;
   font-family: "Architects Daughter", cursive;
-  text-shadow: 3px 10px black;
+  text-shadow: 3px 5px white;
+  position: relative;
+  color: white;
+  text-transform: capitalize;
 }
-
+.content-header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  width: 30vw;
+  padding: 30px;
+}
+.flexTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 .back {
   background-color: #131820;
   background-image: url(../public/image/2.png);
@@ -17,13 +35,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.content-header {
-  color: white;
-  text-transform: capitalize;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
 }
 
 .box {
@@ -45,15 +56,85 @@
 
   text-align: center;
 }
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #37a684 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 3.5em;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+@media (max-width: 1024px) {
+  .animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #37a684 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 3em;
+  }
+}
+
 @media (max-width: 768px) {
+  .img {
+    width: 40vw;
+    padding: 0px;
+  }
+  .animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #37a684 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 2em;
+  }
+
   .back {
     background-image: none;
   }
-  .fontH1 {
-    font-size: 3em;
-    font-family: "Architects Daughter", cursive;
-    text-shadow: 3px 10px black;
-  }
+
   .home {
     display: flex;
     flex-direction: column;
@@ -63,5 +144,5 @@
     text-align: center;
   }
 }
-@media (max-width: 1024px) {
-}
+
+/* title */

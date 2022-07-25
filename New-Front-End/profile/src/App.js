@@ -24,7 +24,7 @@ function App() {
             <div className="content-header home" id="HOME">
               {desc.map((text, i) => {
                 return (
-                  <h1 className="fontH1" key={i}>
+                  <h1 key={i} className="animate-charcter">
                     {text.data}
                   </h1>
                 );

@@ -31,7 +31,7 @@ function About() {
             />
           </div>
           <div className="info">
-            <h4>Танилцуулга</h4>
+            <h4>Танилцуулага</h4>
             <table>
               {about &&
                 about.map((name, i) => {
@@ -44,7 +44,7 @@ function About() {
                   );
                 })}
             </table>
-            <h4>Танилцуулга</h4>
+            <h4>Боловсрол</h4>
             <table>
               {major &&
                 major.map((name, i) => {
@@ -57,7 +57,7 @@ function About() {
                   );
                 })}
             </table>
-            <h4>Танилцуулга</h4>
+            <h4>ТУршлага</h4>
             <table>
               <tbody>
                 <tr>

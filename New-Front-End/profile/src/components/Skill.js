@@ -16,7 +16,16 @@ function Skill() {
           skill.data.map((a) => {
             return (
               <div className="card">
-                <div className="box1">{a}</div>
+                <div className="box1">
+                  <div className="square">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div className="contentBox">
+                      <p>{a}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             );
           })}
@@ -26,7 +35,16 @@ function Skill() {
           skill.data1.map((a) => {
             return (
               <div className="card">
-                <div className="box2">{a}</div>
+                <div className="box2">
+                  <div className="square">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div className="contentBox">
+                      <p>{a}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             );
           })}
