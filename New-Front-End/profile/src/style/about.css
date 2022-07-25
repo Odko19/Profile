@@ -65,7 +65,7 @@ h4 {
   color: white;
   font-size: 10em;
 }
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .about {
     box-sizing: border-box;
     height: 100vh;
