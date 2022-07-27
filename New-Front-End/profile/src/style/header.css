@@ -19,6 +19,7 @@ li {
   margin: 10px;
   text-transform: uppercase;
   list-style-type: none;
+  font-family: "Architects Daughter", cursive;
 }
 header {
   background-color: #131820;

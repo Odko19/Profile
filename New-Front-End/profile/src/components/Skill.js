@@ -22,7 +22,7 @@ function Skill() {
                     <span></span>
                     <span></span>
                     <div className="contentBox">
-                      <p>{a}</p>
+                      <img src={`${a}`} className="image" />
                     </div>
                   </div>
                 </div>
@@ -41,7 +41,7 @@ function Skill() {
                     <span></span>
                     <span></span>
                     <div className="contentBox">
-                      <p>{a}</p>
+                      <img src={`${a}`} className="image" />
                     </div>
                   </div>
                 </div>
