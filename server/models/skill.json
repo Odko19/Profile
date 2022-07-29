@@ -1,0 +1,9 @@
+{
+  "data": ["image/js.png", "image/css.png", "image/js1.png", "image/ps.png"],
+  "data1": [
+    "image/react.png",
+    "image/bootstrap.png",
+    "image/node.png",
+    "image/mysql.png"
+  ]
+}
